@@ -1,93 +1,35 @@
-Neural Network Visual Lab
-Descrição
+Resumo do Projeto — Neural Network Visual Lab
 
-Neural Network Visual Lab é um laboratório interativo desenvolvido em JavaScript utilizando a biblioteca p5.js. O projeto implementa do zero uma rede neural do tipo Multilayer Perceptron (MLP) com backpropagation, permitindo visualizar em tempo real o processo de aprendizado ao resolver o problema clássico XOR.
+O Neural Network Visual Lab é uma aplicação web interativa desenvolvida em JavaScript com a biblioteca p5.js, cujo objetivo é demonstrar de forma visual e didática o funcionamento interno de uma rede neural artificial do tipo Multilayer Perceptron (MLP).
 
-O objetivo é demonstrar, de forma visual e didática, como redes neurais aprendem por meio de ajuste de pesos, propagação direta (forward pass) e retropropagação do erro (backpropagation).
+O sistema implementa do zero o algoritmo de forward propagation e backpropagation, incluindo:
 
-Funcionalidades
-1. Implementação completa de rede neural
+Inicialização aleatória de pesos e bias
 
-Arquitetura configurada como 2-3-1:
+Funções de ativação (Sigmoid e ReLU)
 
-2 neurônios de entrada
+Cálculo do erro
 
-3 neurônios na camada oculta
+Atualização dos pesos via gradiente descendente
 
-1 neurônio de saída
+Controle da taxa de aprendizado em tempo real
 
-Inicialização aleatória de pesos e biases
+A rede possui arquitetura 2-3-1 (duas entradas, três neurônios na camada oculta e uma saída) e é treinada para resolver o problema lógico XOR, um caso clássico que não é linearmente separável e exige pelo menos uma camada oculta para ser solucionado.
 
-Atualização dos pesos via Gradiente Descendente
+A aplicação permite:
 
-Treinamento online utilizando amostras aleatórias do conjunto XOR
+Visualizar os neurônios e conexões
 
-2. Problema XOR
+Observar a variação dos pesos por meio de espessura e cor
 
-O projeto treina a rede para aprender a função lógica XOR:
+Acompanhar a evolução do erro em gráfico com escala
 
-Entrada	Saída Esperada
-0, 0	0
-0, 1	1
-1, 0	1
-1, 1	0
+Ver as previsões da rede para todas as combinações de entrada
 
-O XOR é um problema não linearmente separável, exigindo pelo menos uma camada oculta para ser resolvido.
+Alterar dinamicamente a taxa de aprendizado
 
-3. Visualização da Rede Neural
+Comparar o comportamento entre as funções Sigmoid e ReLU
 
-O sistema exibe:
+O projeto foi desenvolvido com finalidade educacional, visando consolidar conceitos matemáticos e computacionais fundamentais de redes neurais, além de demonstrar domínio prático da implementação manual do algoritmo de aprendizado supervisionado.
 
-Neurônios de entrada, ocultos e saída
-
-Conexões com espessura proporcional ao valor absoluto do peso
-
-Cores diferenciando pesos positivos e negativos
-
-Intensidade dos neurônios baseada na ativação atual
-
-Valores numéricos da saída em tempo real
-
-4. Gráfico de erro
-
-Gráfico dinâmico da evolução do erro
-
-Eixos com escala
-
-Atualização em tempo real
-
-Histórico limitado para melhor visualização
-
-Isso permite observar a convergência do modelo durante o treinamento.
-
-5. Exibição das previsões
-
-O sistema mostra continuamente as previsões da rede para:
-
-[0, 0]
-
-[0, 1]
-
-[1, 0]
-
-[1, 1]
-
-Isso permite acompanhar o quanto o modelo está se aproximando das saídas corretas.
-
-6. Learning Rate em tempo real
-
-Slider interativo
-
-Permite ajustar a taxa de aprendizado dinamicamente
-
-Impacta diretamente na velocidade e estabilidade do treinamento
-
-7. Alternância de função de ativação
-
-O projeto permite alternar entre:
-
-Sigmoid
-
-ReLU
-
-Isso possibilita comparar comportamentos e entender diferenças no aprendizado.
+O principal objetivo é evidenciar compreensão técnica dos fundamentos de Machine Learning, indo além do uso de bibliotecas prontas e implementando diretamente os mecanismos internos da rede neural.
