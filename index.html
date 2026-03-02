@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧠 Neural Network Visual Lab</title>
+
+  <!-- p5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Barra superior -->
+  <div class="top-bar">
+    <div class="title"> Neural Network Visual Lab</div>
+
+    <div class="controls">
+      <button onclick="toggleTraining()">Start / Stop</button>
+      <button onclick="resetNetwork()">Reset</button>
+    </div>
+  </div>
+
+  <!-- Painel lateral -->
+  <div class="side-panel">
+    <h3>Status</h3>
+    <p>Arquitetura: 2-3-1</p>
+    <p>Função: Sigmoid</p>
+    <p>Treinando: XOR</p>
+    <p>Learning Rate: 0.1</p>
+    <p id="errorValue">Erro atual: -</p>
+  </div>
+
+  <!-- Script principal -->
+  <script src="sketch.js"></script>
+
+</body>
+</html>
